@@ -6,6 +6,7 @@ import dice
 import logging
 import os
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 
@@ -104,4 +105,5 @@ async def on_message(message):
 
         await message.channel.send(answer)
 
+keep_alive()
 client.run(TOKEN, log_handler=handler)
