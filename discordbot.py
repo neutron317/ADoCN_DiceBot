@@ -27,9 +27,6 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    
-    if re.match(r'^!stop', message.content): # !stop botを止める(テスト用)
-        exit()
 
     elif re.match(r'^!d66', message.content): # !d66 d66を振る
         result = dice.d66()
