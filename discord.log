@@ -2,3 +2,70 @@
 [2026-01-22 01:54:47] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d050c71173dc03725b9c2adff64d669e).
 [2026-02-05 00:08:54] [INFO    ] discord.client: logging in using static token
 [2026-02-05 00:08:55] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 0121958b6cf5a85ff6abb8fddfd745ed).
+[2026-02-06 13:31:14] [INFO    ] discord.client: logging in using static token
+[2026-02-06 13:31:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 45011491d1f8cc55fc539accc6225e93).
+[2026-02-06 13:41:13] [INFO    ] discord.client: logging in using static token
+[2026-02-06 13:41:14] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 51fed7bf1efd3f41158c10cf49a05223).
+[2026-02-06 13:41:19] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 108, in on_message
+    result = dice.d6table('table/PreciousDays/teacher_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: d6table() missing 1 required positional argument: 'n'
+[2026-02-06 13:41:42] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 108, in on_message
+    result = dice.d6table('table/PreciousDays/teacher_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: d6table() missing 1 required positional argument: 'n'
+[2026-02-06 13:42:17] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 108, in on_message
+    result = dice.d6table('table/PreciousDays/teacher_table.csv', 1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: d6table() missing 1 required positional argument: 'n'
+[2026-02-06 13:42:35] [INFO    ] discord.client: logging in using static token
+[2026-02-06 13:42:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 171c080bd3998689155331ca8ef8da56).
+[2026-02-06 13:42:48] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 108, in on_message
+    result = dice.d6table('table/PreciousDays/teacher_table.csv', 1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/dice.py", line 50, in d6table
+    elif int(row[0]) > diceresult:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'int' and 'list'
+[2026-02-06 13:43:49] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 108, in on_message
+    result = dice.d6table('table/PreciousDays/teacher_table.csv', 1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/dice.py", line 50, in d6table
+    elif int(row[0]) > diceresult:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'int' and 'list'
+[2026-02-06 13:45:04] [INFO    ] discord.client: logging in using static token
+[2026-02-06 13:45:05] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 30469ca1bf2d7d0a1204e089f8a30fc3).
+[2026-02-06 13:45:09] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 108, in on_message
+    result = dice.d6table('table/PreciousDays/teacher_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/dice.py", line 50, in d6table
+    elif int(row[0]) > diceresult:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'int' and 'list'
+[2026-02-06 13:45:44] [INFO    ] discord.client: logging in using static token
+[2026-02-06 13:45:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6fff2787c78d515bbc40c21fce4c1112).

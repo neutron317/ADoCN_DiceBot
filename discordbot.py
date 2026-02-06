@@ -102,5 +102,11 @@ async def on_message(message):
 
         await message.channel.send(answer)
 
+    elif re.match(r'^!pdtec', message.content): # プレシャスデイズ師匠の呼び名表
+        result = dice.d6table('table/PreciousDays/teacher_table.csv')
+        answer = '```プレシャスデイズ師匠の呼び名表 > {0} > {1}```'.format(result[0], result[2]) # 返答を生成
+
+        await message.channel.send(answer)
+
 keep_alive()
 client.run(TOKEN, log_handler=handler)

@@ -37,3 +37,16 @@ def d66table(file):
             elif int(row[0]) > diceresult:
                 return dicetuple + above_row
             above_row = row
+
+def d6table(file):
+    diceresult = roll(1)[0]
+    dicetuple = [diceresult]
+    with open(file) as table_file:
+        reader = csv.reader(table_file)
+        above_row = []
+        for row in reader:
+            if int(row[0]) == diceresult:
+                return dicetuple + row
+            elif int(row[0]) > diceresult:
+                return dicetuple + above_row
+            above_row = row
