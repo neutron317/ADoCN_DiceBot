@@ -5,6 +5,8 @@ import discord
 import dice
 import logging
 import os
+import requests
+import time
 from dotenv import load_dotenv
 from keep_alive import keep_alive
 
@@ -16,12 +18,34 @@ intents.message_content = True
 load_dotenv()
 
 TOKEN = os.getenv("TOKEN")
+RENDER_ID = os.getenv("RENDER_ID")
+API_KEY = os.getenv("KEY_SUSPEND")
 
 client = discord.Client(intents=intents)
 
+def suspend_render():
+    if not RENDER_ID or not API_KEY:
+        print("IDかキーがセットされていません。Suspendをスキップします。")
+        return
+    
+    url = f"https://api.render.com/v1/services/{RENDER_ID}/suspend"
+    headers = {
+        "Accept": "application/json",
+        "Authorization": f"Bearer {API_KEY}"
+    }
+
+    print("RenderにSuspendのリクエストを送信...")
+    response = requests.post(url, headers = headers)
+
+    if response.status_code == 204:
+        print("Suspendに成功しました。")
+    else:
+        print(f"Suspendに失敗しました: ステータスコード {response.status_code}")
+        print(response.text)
+
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
+    print(f'{client.user}のログインに成功しました。')
 
 @client.event
 async def on_message(message):
@@ -126,5 +150,16 @@ async def on_message(message):
 
         await message.channel.send(answer)
 
-keep_alive()
-client.run(TOKEN, log_handler=handler)
+try:
+    print('----------ADoCN botを実行しています----------')
+    keep_alive()
+    client.run(TOKEN, log_handler=handler)
+
+except discord.errors.HTTPException as e:
+    if e.status == 429: # Too Many Request
+        print("---------- 429 Too Many Request : ADoCN botをSuspendします----------")
+        suspend_render()
+        time.sleep(60)
+
+    else:
+        raise e
