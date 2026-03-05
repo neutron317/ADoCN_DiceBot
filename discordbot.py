@@ -153,7 +153,7 @@ async def on_message(message):
 try:
     print('----------ADoCN botを実行しています----------')
     keep_alive()
-    client.run(TOKEN, log_handler=handler)
+    client.run(TOKEN)
 
 except discord.errors.HTTPException as e:
     if e.status == 429: # Too Many Request
