@@ -156,6 +156,8 @@ try:
     client.run(TOKEN)
 
 except discord.errors.HTTPException as e:
+    print(e)
+    
     if e.status == 429: # Too Many Request
         print("---------- 429 Too Many Request : ADoCN botをSuspendします----------")
         suspend_render()
