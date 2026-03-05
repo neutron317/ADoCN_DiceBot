@@ -19,7 +19,7 @@ load_dotenv()
 
 TOKEN = os.getenv("TOKEN")
 RENDER_ID = os.getenv("RENDER_ID")
-API_KEY = os.getenv("KEY_SUSPEND")
+API_KEY = os.getenv("API_KEY")
 
 client = discord.Client(intents=intents)
 
@@ -34,7 +34,7 @@ def suspend_render():
         "Authorization": f"Bearer {API_KEY}"
     }
 
-    print("RenderにSuspendのリクエストを送信...")
+    print("----------RenderにSuspendのリクエストを送信----------")
     response = requests.post(url, headers = headers)
 
     if response.status_code == 204:
@@ -45,7 +45,7 @@ def suspend_render():
 
 @client.event
 async def on_ready():
-    print(f'{client.user}のログインに成功しました。')
+    print(f'----------{client.user}のログインに成功----------')
 
 @client.event
 async def on_message(message):
