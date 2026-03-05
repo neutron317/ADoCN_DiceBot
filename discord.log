@@ -69,3 +69,115 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'list'
 [2026-02-06 13:45:44] [INFO    ] discord.client: logging in using static token
 [2026-02-06 13:45:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6fff2787c78d515bbc40c21fce4c1112).
+[2026-02-06 14:50:27] [INFO    ] discord.client: logging in using static token
+[2026-02-06 14:50:28] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 85305239c4710404c6acca292e880cfa).
+[2026-02-06 16:50:29] [INFO    ] discord.client: logging in using static token
+[2026-02-06 16:50:30] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d238227443d2de5878fb56e5fe8f98e9).
+[2026-02-06 16:50:41] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 114, in on_message
+    result = dice.d66table('table/PreciousDays/prize_change_table')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/dice.py", line 31, in d66table
+    with open(file) as table_file:
+         ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'table/PreciousDays/prize_change_table'
+[2026-02-06 16:50:54] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 114, in on_message
+    result = dice.d66table('table/PreciousDays/prize_change_table')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/dice.py", line 31, in d66table
+    with open(file) as table_file:
+         ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'table/PreciousDays/prize_change_table'
+[2026-02-06 16:51:33] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 114, in on_message
+    result = dice.d66table('table/PreciousDays/prize_change_table')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/dice.py", line 31, in d66table
+    with open(file) as table_file:
+         ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'table/PreciousDays/prize_change_table'
+[2026-02-06 16:51:36] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/test_discordbot.py", line 120, in on_message
+    result = dice.d66table('table/PreciousDays/prize_friend_table')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/neutr/OneDrive/workspace/project/git/discord_bot_ADoCN/dice.py", line 31, in d66table
+    with open(file) as table_file:
+         ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'table/PreciousDays/prize_friend_table'
+[2026-02-06 16:51:55] [INFO    ] discord.client: logging in using static token
+[2026-02-06 16:51:57] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9851e910052e87a947c1c22718923073).
+[2026-03-05 19:56:44] [INFO    ] discord.client: logging in using static token
+[2026-03-05 19:56:46] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 448132f0f30197c71cff91a3f969a98d).
+[2026-03-05 19:56:51] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\neutr\AppData\Roaming\Python\Python312\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\test_discordbot.py", line 78, in on_message
+    result = dice.d66table('table/PreciousDays/secret_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\dice.py", line 34, in d66table
+    for row in reader:
+UnicodeDecodeError: 'cp932' codec can't decode byte 0x87 in position 5: illegal multibyte sequence
+[2026-03-05 19:56:54] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\neutr\AppData\Roaming\Python\Python312\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\test_discordbot.py", line 72, in on_message
+    result = dice.d66table('table/PreciousDays/origin_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\dice.py", line 34, in d66table
+    for row in reader:
+UnicodeDecodeError: 'cp932' codec can't decode byte 0x81 in position 10: illegal multibyte sequence
+[2026-03-05 19:57:25] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\neutr\AppData\Roaming\Python\Python312\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\test_discordbot.py", line 72, in on_message
+    result = dice.d66table('table/PreciousDays/origin_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\dice.py", line 34, in d66table
+    for row in reader:
+UnicodeDecodeError: 'cp932' codec can't decode byte 0x81 in position 10: illegal multibyte sequence
+[2026-03-05 19:59:43] [INFO    ] discord.client: logging in using static token
+[2026-03-05 19:59:44] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 110d8e54b78829b38867701148ae4996).
+[2026-03-05 19:59:49] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\neutr\AppData\Roaming\Python\Python312\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\test_discordbot.py", line 78, in on_message
+    result = dice.d66table('table/PreciousDays/secret_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\dice.py", line 34, in d66table
+    reader = csv.reader(table_file, encoding = csv_encoding)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'encoding' is an invalid keyword argument for this function
+[2026-03-05 20:03:01] [INFO    ] discord.client: logging in using static token
+[2026-03-05 20:03:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 8dc71872a803e7b4d531614d73521b97).
+[2026-03-05 20:03:05] [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\neutr\AppData\Roaming\Python\Python312\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\test_discordbot.py", line 78, in on_message
+    result = dice.d66table('table/PreciousDays/secret_table.csv')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neutr\OneDrive\workspace\project\git\discord_bot_ADoCN\dice.py", line 34, in d66table
+    for row in reader:
+UnicodeDecodeError: 'cp932' codec can't decode byte 0x87 in position 5: illegal multibyte sequence
+[2026-03-05 20:06:36] [INFO    ] discord.client: logging in using static token
+[2026-03-05 20:06:37] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 781dc69039ed720df1bfcff4bdb3611f).
+[2026-03-06 01:12:27] [WARNING ] discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+[2026-03-06 01:12:27] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+[2026-03-06 01:12:33] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 08763353fa96c34c4077d39e7145da16).

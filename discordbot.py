@@ -102,6 +102,24 @@ async def on_message(message):
 
         await message.channel.send(answer)
 
+    elif re.match(r'^!pdite', message.content): # プレシャスデイズプライズ表(物品)
+        result = dice.d66table('table/PreciousDays/prize_item_table.csv')
+        answer = '```プレシャスデイズ家名名前表 > {0} > {1}```'.format(result[0], result[2]) # 返答を生成
+
+        await message.channel.send(answer)
+    
+    elif re.match(r'^!pdcha', message.content): # プレシャスデイズプライズ表(自身の変化)
+        result = dice.d66table('table/PreciousDays/prize_change_table')
+        answer = '```プレシャスデイズ家名名前表 > {0} > {1}```'.format(result[0], result[2]) # 返答を生成
+
+        await message.channel.send(answer)
+
+    elif re.match(r'^!pdfri', message.content): # プレシャスデイズプライズ表(友人)
+        result = dice.d66table('table/PreciousDays/prize_friend_table')
+        answer = '```プレシャスデイズ家名名前表 > {0} > {1}```'.format(result[0], result[2]) # 返答を生成
+
+        await message.channel.send(answer)
+
     elif re.match(r'^!pdtec', message.content): # プレシャスデイズ師匠の呼び名表
         result = dice.d6table('table/PreciousDays/teacher_table.csv')
         answer = '```プレシャスデイズ師匠の呼び名表 > {0} > {1}```'.format(result[0], result[2]) # 返答を生成

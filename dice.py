@@ -28,7 +28,7 @@ def d66():
 def d66table(file):
     diceresult = d66()
     dicetuple = [diceresult]
-    with open(file) as table_file:
+    with open(file, encoding='utf-8') as table_file:
         reader = csv.reader(table_file)
         above_row = []
         for row in reader:
@@ -41,7 +41,7 @@ def d66table(file):
 def d6table(file):
     diceresult = roll(1)[0]
     dicetuple = [diceresult]
-    with open(file) as table_file:
+    with open(file, encoding='utf-8') as table_file:
         reader = csv.reader(table_file)
         above_row = []
         for row in reader:
